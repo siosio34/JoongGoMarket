@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
   
+  devise_for :users 
+
+  
+      
+
+  get 'welcome/index'
+
   resources :seller_users do
     resources :seller_user_comments
   end  
@@ -11,15 +18,14 @@ Rails.application.routes.draw do
 
 
 
-  resources :users
 
       
-  
   
   resources :products do
     resources :product_comments
   end
   
+  root to: 'welcome#index'
   
     
   # The priority is based upon order of creation: first created -> highest priority.
