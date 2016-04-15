@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
   
-  devise_for :users 
 
   
       
 
-  get 'welcome/index'
 
+
+
+  devise_for :customers
   resources :seller_users do
     resources :seller_user_comments
   end  
