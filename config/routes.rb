@@ -1,9 +1,18 @@
 Rails.application.routes.draw do
-  resources :seller_user_comments
-  resources :seller_users
-  resources :users
-  resources :product_comments
-  resources :products
+  
+  resources :seller_users do
+    resources :seller_user_comments
+  end  
+  
+  resources :users do
+  
+  
+  resources :products do
+    resources :product_comments
+  end
+  
+  
+    
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
