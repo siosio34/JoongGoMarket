@@ -3,8 +3,17 @@ Rails.application.routes.draw do
   resources :seller_users do
     resources :seller_user_comments
   end  
-  
-  resources :users do
+ 
+
+ resources :seller_users do
+    resources :products
+ end
+
+
+
+  resources :users
+
+      
   
   
   resources :products do
