@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_id: 
+  sellcount: 1
+  profit: 1
+  grade: 1
+  phonenumber: MyString
+  intro: MyText
+  bank: MyString
+  banknumber: 1
+
+two:
+  customer_id: 
+  sellcount: 1
+  profit: 1
+  grade: 1
+  phonenumber: MyString
+  intro: MyText
+  bank: MyString
+  banknumber: 1

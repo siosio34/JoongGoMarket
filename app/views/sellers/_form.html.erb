@@ -1,0 +1,18 @@
+<%= simple_form_for(@seller) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :customer %>
+    <%= f.input :sellcount %>
+    <%= f.input :profit %>
+    <%= f.input :grade %>
+    <%= f.input :phonenumber %>
+    <%= f.input :intro %>
+    <%= f.input :bank %>
+    <%= f.input :banknumber %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

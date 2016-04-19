@@ -7,10 +7,10 @@ Rails.application.routes.draw do
 
 
 
+  resources :sellers
   devise_for :customers
   resources :seller_users do
-    resources :seller_user_comments
-  end  
+    end  
  
 
  resources :seller_users do
@@ -23,8 +23,7 @@ Rails.application.routes.draw do
       
   
   resources :products do
-    resources :product_comments
-  end
+    end
   
   root to: 'welcome#index'
   
@@ -81,6 +80,5 @@ Rails.application.routes.draw do
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  #     #   end
 end
